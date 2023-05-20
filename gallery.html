@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Gallery-TechHub</title>
+    <style>
+        body{
+            margin: 0;
+        } 
+        #container{
+            height: 60px;
+            width: auto;
+            background-color: black;
+        }
+        #logo{
+            float: left;
+            padding-top: 10px;
+            padding-left: 20px;
+            font-size: 40px;
+            color: darkgray;
+        }
+        #nav_menu{
+            float: right;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+        #nav_menu a{
+            text-decoration: none;
+            font-size: 25px;
+            padding: 15px;
+            color: white;
+        }
+        #nav_menu a:hover{
+            color: darkslateblue;
+        }
+        #photo_album{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin-top: 10px;
+            margin-left: 15%;
+            height: 500px;
+            width: 900px;
+            padding: 5px 5px 5px 5px;
+        }
+        #d1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #d2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        #d3{
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        #d4{
+            grid-row-start: 1;
+            grid-row-end: 2.5;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #d5{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #d6{
+            grid-row-start: 1;
+            grid-row-end: 3; 
+        }
+        #d7{
+            grid-column-start: 3;
+            grid-column-end: 5; 
+        }
+        #d8{
+            grid-row-start: 1;
+            grid-row-end: 2; 
+        }
+        #d9{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">Gallery</div>
+        <div id="nav_menu">
+           <a href="index.html">Home</a>
+           <a href="services.html">Services</a>
+           <a href="gallery.html">Gallery</a>
+           <a href="about.html">About Us</a>
+        </div>
+    </div>
+
+    <div id="photo_album">
+       <div id="d1">
+           <img src="images/grid1.jpeg" height="165px" width="300px">  
+       </div>
+       <div id="d2">
+           <img src="images/grid2.png" height="165px" width="300px">
+       </div>
+       <div id="d3">
+           <img src="images/grid3.png" height="135px" width="300px">
+       </div>
+       <div id="d4">
+           <img src="images/grid4.jpg" height="165px" width="300px">
+       </div>
+       <div id="d5">
+           <img src="images/grid6.jpeg" height="315px" width="300px">
+       </div>
+       <div id="d6">
+           <img src="images/grid9.png" height="345px" width="135px">
+       </div>
+       <div id="d7">
+           <img src="images/grid8.jpg" height="135px" width="285px">
+       </div>
+       <div id="d8">
+           <img src="images/grid7.jpeg" height="170px" width="138px">
+       </div>
+       <div id="d9">
+           <img src="images/grid5.jpg" height="170px" width="138px">
+       </div>
+    </div>
+
+    <div>
+        <footer>Copyright © TechHub-2022</footer>
+    </div>
+    
+</body>
+</html>

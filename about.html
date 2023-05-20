@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>About Us-TechHub</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+        } 
+        #container{
+            height: 60px;
+            width: auto;
+            background-color: black;
+        }
+        #logo{
+            float: left;
+            padding-top: 10px;
+            padding-left: 20px;
+            font-size: 40px;
+            color: darkgray;
+        }
+        #nav_menu{
+            float: right;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+        #nav_menu a{
+            text-decoration: none;
+            font-size: 25px;
+            padding: 15px;
+            color: white;
+        }
+        #nav_menu a:hover{
+            color: darkslateblue;
+        }
+        #about_section{
+            margin-left: 15px;
+        }
+        #about_section h2 p{
+            float: left;
+        }
+        #about_section h2{
+            color: white;
+        }
+        #about_section p{
+            font-size: 20px;
+            color: white;
+        }
+        #about_section form{
+            box-sizing: border-box;
+            float: right;
+            margin-top: -140px;
+            margin-right: 30px;
+            padding: 10px 10px 10px 10px;
+            color: black;
+            background-color: lightblue;
+        }
+        #mid_section{
+            box-sizing: border-box;
+            margin-top: 50px;
+            padding-left: 15px;
+            padding-top: 5px;
+            background-color: blueviolet;
+            background-image: linear-gradient(to right, blueviolet,purple,blue);
+            padding-bottom: 15px;
+            color: beige;
+        }
+        #mid_section h2 p{
+            float: left;
+        }
+        #mid_section p{
+            font-weight: 15px;
+        }
+        #button{
+            float: right;
+            margin-right: 130px;
+            margin-top: -50px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 5px;
+        }
+        #button:hover{
+            border: 2px solid black;
+            color: black;
+        }
+        #contact_info{
+            padding-left: 150px;
+            float: left;
+        }
+        #contact_info h2{
+            text-decoration: underline;
+        }
+        #map{
+            float: right;
+            padding-right: 100px;
+            padding-top: 20px;
+        }
+        #last_section{
+            width: auto;
+            height: 210px;
+            background-color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">About Us</div>
+        <div id="nav_menu">
+           <a href="index.html">Home</a>
+           <a href="services.html">Services</a>
+           <a href="gallery.html">Gallery</a>
+           <a href="about.html">About Us</a>
+        </div>
+    </div>
+
+    <div id="about_section">
+        <h2>Our Role</h2>
+        <p>"We are the team of programmer or a coder who specializes 
+          in, or is specifically <br> engaged in, the development of World
+          Wide Web applications using a client-server <br> model.
+          We create brand and identification for your business world wide.<br>
+          A design agency for digital age, we make websites come alive."
+        </p>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" name="fullname">
+            <label>Company:</label>
+            <input type="text" name="companyname"><br>
+            <br>
+            <label>Email:</label>
+            <input type="text" name="email">
+            <label>Phone No.:</label>
+            <input type="text" name="phonenumber"><br>
+            <br>
+            <label>Message:</label>
+            <textarea></textarea>
+            <input id="submit" type="submit" name="submitmessage">
+
+            <script>
+                let elm= document.getElementById('submit');
+                elm.addEventListener('click',function(){
+                    alert("Form Filled!")
+                });
+            </script>
+
+        </form>
+    </div>
+
+    <div id="mid_section">
+        <h2>Get your website now.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur maxime quae nihil, necessitatibus laboriosam quos.
+        </p>
+        <h3 id="button">Contact Us</h3>
+    </div>
+
+    <div id="last_section">
+       <div id="contact_info">
+          <h2>Contact Us</h2>
+          <p>Apex Building-3rd Floor</p>
+          <p>Koteshwor, Kathmandu</p>
+          <p>Biratnagar- Branch Office</p>
+          <p>Nepal</p>
+       </div>
+
+       <div id="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14134.020317728031!2d85.3211825!
+           3d27.6707802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25d13e9fafdcd629!2sYala%20Tech%20Hub%20Pvt.%20Ltd.
+           !5e0!3m2!1sen!2snp!4v1646027760185!5m2!1sen!2snp"height="180px" width="350px"></iframe>
+       </div>
+    </div>
+
+</body>
+</html>
